@@ -1,0 +1,492 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navbar section start */
+
+.sticky{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    height: 85px;
+}
+.container img{
+    margin-left: 10px;
+    width: 40px;
+}
+
+.main-nav{
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: block;
+    max-width: 780px;
+}
+
+.lis{
+    margin-left: 10px;
+}
+
+.nav-links ul{
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-links .gap{
+    margin-right: 150px;
+}
+
+.nav-links a{
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px;
+    color: black;
+}
+
+.nav-links a:hover{
+    background-color: lightgray
+}
+
+.nav-links button{
+    color: black;
+    margin: 15px;
+    font-size: 15px;
+    background: none;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links button:hover{
+    border: 1px solid black;
+}
+
+.menu{
+    margin-left: 10px;
+    display: none;
+}
+/* navbar section end */
+
+/* Hero section start */
+
+.flex-row{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.content{
+    margin: auto;
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.content img{
+    margin-top: 80px;
+    width: 20px;
+}
+
+/* Hero section end */
+
+/* About section start */
+.body{
+    max-width: 1440px;
+    background-color:  #F2F2F2;
+}
+
+.section{
+    padding: 0;
+    max-width: 900px;
+    height: 560px;
+}
+
+.about-header{
+    margin-top: 10px;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.line{
+    width: 350px;
+    border: 1px solid #1F1F1F;
+}
+
+.about-header h1{
+    display: inline-block;
+    width: 20vw;
+    font-size: 30px;
+    font-weight: 500;
+    color: #1F1F1F; 
+}
+
+.about-content{
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.about-content .left{
+    font-size: 16px;
+    width: 37vw;
+    font-weight: 480;
+}
+
+.about-content .right{
+    background-color: #C4C4C4;
+    height: 260px;
+    width: 260px;
+    border-radius: 5px;
+}
+
+/* About section end */
+
+
+
+/* Contact Section Start */
+
+.font{
+    font-size: 20px;
+}
+
+.contact{
+    text-align: center;
+}
+
+#msg{
+    font-size: 17px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: lightcyan;
+    margin: 20px;
+    padding: 10px;
+}
+
+#msg:hover{
+    border: 1px solid #504e4e;
+    color: white;
+    background-color: rgb(84, 128, 128);
+}
+.form {
+    position: relative;
+    display: none;
+    margin: 20px;
+    margin-bottom: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: aliceblue;
+	padding: 20px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+    font-size: 17px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 1px solid #b9b6b6;
+	border-radius: 7px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control textarea{
+	border: 1px solid #b9b6b6;
+    border-radius: 7px;
+    display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+    height: 100px;
+}
+
+.send{
+    border: 1px solid #C4C4C4;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.send:hover{
+    color: whitesmoke;
+    background-color: rgb(98, 118, 124);
+}
+
+
+/* Top button */
+
+#Topbtn{
+    height: 50px;
+    width: 50px;
+}
+
+#Topbtn {
+    position: fixed;
+    bottom: 10px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 50%;
+  }
+  
+#Topbtn:hover {
+    filter: drop-shadow(0 0 5px rgb(77, 73, 73));
+}
+  
+
+/* For Responsive Design */
+
+
+@media screen and (max-width: 1024px) {
+    .nav-links .gap{
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+    
+    .nav-links{
+        width: 700px;
+        margin-left: 30px;
+    }
+
+    .section{
+        max-width: 800px;
+    }
+
+    .body{
+        height: 650px;
+    } 
+
+    .about-header h1{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    /* Menu navbar start */
+    
+    .menu{
+        display: block;
+    }
+    .main-nav ul{
+        flex-direction: column;
+    }
+    .nav-links{
+        display: none;
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 430px;
+        margin-right: -70px;
+        overflow: hidden;
+        background-color:  aliceblue;
+    }
+    .nav-links li{
+        width: 100%;
+        padding: 5px;
+    }
+    .nav-links a{
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .nav-links a:hover{
+        background-color: aliceblue;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    .nav-links button{
+        font-size: 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Menu navbar end */
+
+
+    .container img{
+        margin-left: 5px;
+    }
+
+    .section{
+        padding: 5vw;
+        max-width: 650px;
+    }
+
+    .body{
+        height: 750px;
+    }
+    .about-header{
+        gap: 5px;
+    }
+
+    .about-header h1{
+        width: 40vw;
+    }
+
+    #Topbtn{
+        height: 45px;
+        width: 45px;
+    }
+    
+}
+
+@media screen and (max-width: 655px) {
+
+
+    .line{
+        width: 200px;
+        border: 1px solid #1F1F1F;
+    }
+
+    .about-header h1{
+        width: 25vw;
+        font-size: 19px;
+    }
+
+    .content h1{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    
+    .content p{
+        font-size: 15px;
+    }
+
+    .section{
+        max-width: 350px;
+    }
+
+    .body{
+        height: 900px;
+    }
+
+    .about-header{
+        margin-top: 0;
+    }
+    .about-header h1{
+        width: 50vw;
+    }
+    .about-content{
+        margin-top: 60px;
+        flex-direction: column-reverse;
+    }
+
+    .about-content .left{
+        margin-top: 30px;
+        padding-bottom: 10px;
+        width: 300px;
+    }
+    
+    .about-content .right{
+        width: 200px;
+        height: 180px;
+    } 
+
+    #Topbtn{
+        height: 35px;
+        width: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+
+    .line{
+        width: 100px;
+        border: 1px solid #1F1F1F;
+    }
+
+    .about-header h1{
+        width: 36vw;
+        font-size: 15px;
+    }
+
+    .content h1{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    .content p{
+        font-size: 10px;
+    }
+
+    .content img{
+        width: 15px;
+    }
+
+    .section{
+        max-width: 290px;
+    }
+    .body{
+        height: 1000px;
+    }
+    
+    .about-header{
+        gap: 3.5px;
+    }
+    .about-content .left{
+        width: 250px;
+    }
+
+    #Topbtn{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .body{
+        max-width: 350px;
+    }
+    
+    .about-content .left{
+        width: 250px;
+    }
+
+    #Topbtn{
+        height: 30px;
+        width: 30px;
+    }
+}

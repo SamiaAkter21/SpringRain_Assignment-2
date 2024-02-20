@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="sticky">
+        <div class="container main-nav flex">
+            <a href="#hero"><img src="image/logo.jpg"></a>
+            <div id="menuu" class="nav-links lis">
+                <ul class="flex">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a class="gap" href="#">Contact</a></li>
+                    <li><button class="btn" type="button">Resume</button></li>
+                    <li><button type="button">Hire me</button></li>
+                </ul>
+            </div>
+            <a class="menu" href="#menuu" onclick="menuFunction()"><img src="image/nav-menu.jpg"></a>
+        </div>
+    </nav>
+
+    <section id="hero" class="container section flex-row">
+        <div class="content">
+            <h1>Hi, I’m John Smith</h1>
+            <p>I design and build things.</p>
+            <a href="#about"><img src="image/scroll.jpg"></a>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="body">
+        <div class="container about-section section">
+            <div class="about-header flex">
+                <div class="line"></div>
+                <h1 class="middle">About Me</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="about-content flex">
+                <div class="left">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet vestibulum felis. Vivamus facilisis ligula id fringilla gravida. Suspendisse ultricies sollicitudin lacus, et rutrum nunc bibendum sed.
+                        <br><br><br>
+                         Donec tincidunt tellus sed libero ultricies, eu semper enim molestie. Etiam lorem quam, tincidunt nec malesuada eu, interdum nec leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi placerat tortor sed felis tristique. 
+                         <br><br><br>
+                         Nunc aliquam magna ut nunc vestibulum, ut dictum nulla sagittis. Cras egestas magna sed nisl pellentesque, sed lobortis felis convallis. Phasellus eget ex at est lobortis iaculis eget non risus. Etiam ultricies at est sit amet condimentum.</p>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container about-section section">
+            <div class="about-header flex">
+                <div class="line"></div>
+                <h1 class="middle">Contact Me</h1>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <p class="font">I am currently seeking employment, and I would appreciate it if you could contact me with any available job oppurtunities.</p>
+
+                <button id="msg" onclick="contactFunction()">Want to Contact?</button>
+            </div>
+            <form action="#" id="form" class="form" autocomplete="off">
+                <div class="form-control">
+                    <label for="username">Name</label>
+                    <input type="text" placeholder="Enter Your Name" id="username" />
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Your Email" id="email" />
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label><br>
+                    <textarea type="Message" placeholder="Write Details...." id="Message"></textarea>
+                </div>
+                
+                <button class="send">Send Message</button>
+            </form>
+            <br>
+        </div>
+    </section>
+
+
+
+    <!-- <div class="goToTop"> -->
+        <img class="goToTop" onclick="topFunction()" id="Topbtn" src="/image/up-arrow.png">
+    <!-- </div> -->
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
